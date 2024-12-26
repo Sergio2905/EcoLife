@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="css/style.min.css?_v=20241226155225">
+    <link rel="stylesheet" href="css/style.min.css?_v=20241226205125">
     <link rel="icon" type="image/ico" href="img/favicon.ico">
     <meta property="og:image" content="img/main/image.png" />
     <title>EcoLife</title>
@@ -26,13 +26,13 @@
                 <nav class="menu__body">
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <a href="#" class="menu__link">Чому EcoLiFe PS</a>
+                            <a href="#" class="menu__link" data-target="why">Чому EcoLiFe PS</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">Характеристики</a>
+                            <a href="#" class="menu__link" data-target="values">Характеристики</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__link">Вибрати станцію</a>
+                            <a href="#" class="menu__link" data-target="products">Вибрати станцію</a>
                         </li>
                     </ul>
                     <div class="menu__socials">
@@ -79,7 +79,7 @@
                             <h1 class="main__title">
                                 ПОРТАТИВНІ ТА ПОТУЖНІ СТАНЦІЇ EcoLiFe PS
                             </h1>
-                            <button type="button" class="main__btn btn_green">
+                            <button type="button" class="main__btn btn_green" data-target="products">
                                 Вибрати станцію
                             </button>
                         </div>
@@ -122,7 +122,7 @@
                 </div>
             </section>
 
-            <section class="why">
+            <section class="why" id="why">
                 <div class="why__container container">
                     <div class="why__header">
                         <h2 class="why__title">Чому саме EcoLiFe PS?</h2>
@@ -197,7 +197,7 @@
                 </div>
             </section>
 
-            <section class="values">
+            <section class="values" id="values">
                 <div class="values__container container">
                     <h2 class="values__title">Характеристики станцій</h2>
                     <div class="values__body">
@@ -267,13 +267,13 @@
                             <p class="order__text">Залиште заявку і наш менеджер зв’яжеться з вами</p>
                             <input class="order__input" type="text" placeholder="Ваше ім’я" name="uname">
                             <input class="order__input" type="text" placeholder="Ваш номер телефону" name="uphone">
-                            <button class="order__btn btn_white" type="button">ЗАЛИШИТИ ЗАЯВКУ</button>
+                            <button class="order__btn btn_white" type="submit">ЗАЛИШИТИ ЗАЯВКУ</button>
                         </form>
                     </div>
                 </div>
             </section>
 
-            <section class="products">
+            <section class="products" id="products">
                 <div class="products__container container">
                     <h2 class="products__title">Виберіть свою станцію</h2>
                     <div class="products__body">
@@ -288,7 +288,8 @@
                                     <div class="products__price products__price_old">96 000</div>
                                     <div class="products__price">84 000 грн</div>
                                 </div>
-                                <button type="button" class="products__btn btn_green">ЗАМОВИТИ</button>
+                                <button type="button" class="products__btn btn_green"
+                                    data-modal="order">ЗАМОВИТИ</button>
                             </div>
                         </div>
                         <div class="products__item">
@@ -302,7 +303,8 @@
                                     <div class="products__price products__price_old">96 000</div>
                                     <div class="products__price">103 000 грн</div>
                                 </div>
-                                <button type="button" class="products__btn btn_green">ЗАМОВИТИ</button>
+                                <button type="button" class="products__btn btn_green"
+                                    data-modal="order">ЗАМОВИТИ</button>
                             </div>
                         </div>
                         <div class="products__item">
@@ -316,7 +318,8 @@
                                     <div class="products__price products__price_old">96 000</div>
                                     <div class="products__price">124 000 грн</div>
                                 </div>
-                                <button type="button" class="products__btn btn_green">ЗАМОВИТИ</button>
+                                <button type="button" class="products__btn btn_green"
+                                    data-modal="order">ЗАМОВИТИ</button>
                             </div>
                         </div>
                     </div>
@@ -365,19 +368,157 @@
                 </div>
             </section>
 
+            <section class="about">
+                <div class="about__container container">
+                    <h2 class="about__title">Характеристики пристрою</h2>
+                    <div class="about__body">
+                        <div class="about__text">
+                            <button type="button" class="about__more">
+                                <svg>
+                                    <use href="img/icons/icons.svg#arrow"></use>
+                                </svg>
+                            </button>
+                            <ol>
+                                <li>Цифрове керування, РК-дисплей та 3 світлодіодних індикатори</li>
+                                <li>Чиста синусоїда.</li>
+                                <li>Подвійний замкнутий контур напруги та струму</li>
+                                <li>Два виходи: мережевий та інверторний</li>
+                                <li>
+                                    Чотири режими заряджання:
+                                    <ul>
+                                        <li>сонячна енергія,</li>
+                                        <li>гібридне заряджання від електромережі,</li>
+                                        <li>пріоритет сонячного модуля</li>
+                                        <li>гібридне заряджання від сонячного модуля.</li>
+                                    </ul>
+                                </li>
+                                <li>Перемикач УВІМКН/ВИМКН для керуванням живленням</li>
+                                <li>Режим енергозбереження.</li>
+                                <li>Управління швидкістю обертання вентилятором</li>
+                                <li>Універсальний захист з захисними функціями</li>
+                            </ol>
+                        </div>
+                        <div class="about__video">
+                            <iframe src="https://www.youtube.com/embed/E-9bycb_3nI?si=EtIHni_iuZF08ldx&amp;controls=0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="order order_simple">
+                <div class="order__container container">
+                    <div class="order__body">
+                        <div class="order__info">
+                            <h2 class="order__title">Залишити заявку</h2>
+                            <p class="order__text">Залиште заявку і наш менеджер зв’яжеться з вами</p>
+                        </div>
+                        <form action="" class="order__form">
+                            <input class="order__input" type="text" placeholder="Ваше ім’я" name="uname">
+                            <input class="order__input" type="text" placeholder="Ваш номер телефону" name="uphone">
+                            <button class="order__btn btn_white" type="submit">ЗАЛИШИТИ ЗАЯВКУ</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
         </div>
 
         <footer class="footer">
     <div class="footer__container container">
         <div class="footer__body">
-
+            <div class="footer__main" data-desk="footer-menu, after">
+                <a href="/" class="footer__logo" data-mob="footer-menu, after">
+                    <img src="img/logo.svg" alt="Logo">
+                </a>
+                <div class="footer__socials">
+                    <a href="#" class="footer__social">
+                        <svg>
+                            <use href="img/icons/icons.svg#mail"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social">
+                        <svg>
+                            <use href="img/icons/icons.svg#viber"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social">
+                        <svg>
+                            <use href="img/icons/icons.svg#whatsapp"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__menu menu-footer" data-move="footer-menu, 480">
+                <nav class="menu-footer__body">
+                    <ul class="menu-footer__list">
+                        <li class="menu-footer__item">
+                            <a href="#" class="menu-footer__link" data-target="products">Виберіть станцію</a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="#" class="menu-footer__link" data-target="why">Чому EcoLiFe PS</a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="#" class="menu-footer__link" data-target="values">Характеристики</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
+        <p class="footer__rights">
+            2024 — EcoLifePowerStation — ecolifebattery.com.ua
+        </p>
     </div>
 </footer>
     </div>
 
-    
-    <script src="js/app.min.js?_v=20241226155225" defer></script>
+    <div class="modal" id="order">
+    <div class="modal__wrapper">
+        <div class="modal__content">
+            <div class="modal__header">
+                <a href="/" class="modal__logo">
+                    <img src="img/logo-invert.svg" alt="Logo">
+                </a>
+                <button type="button" class="modal__close"></button>
+            </div>
+            <div class="modal__body">
+                <form action="" class="modal__order order__form">
+                    <h2 class="order__title">Залишити заявку</h2>
+                    <p class="order__text">Залиште заявку і наш менеджер зв’яжеться з вами</p>
+                    <input class="order__input" type="text" placeholder="Ваше ім’я" name="uname">
+                    <input class="order__input" type="text" placeholder="Ваш номер телефону" name="uphone">
+                    <button class="order__btn btn_white" type="submit">ЗАЛИШИТИ ЗАЯВКУ</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="done">
+    <div class="modal__wrapper">
+        <div class="modal__content">
+            <div class="modal__header">
+                <a href="/" class="modal__logo">
+                    <img src="img/logo-invert.svg" alt="Logo">
+                </a>
+                <button type="button" class="modal__close"></button>
+            </div>
+            <div class="modal__body">
+                <div class="modal__order order__form">
+                    <h2 class="order__title">Дякуємо</h2>
+                    <p class="order__text">
+                        Ваша заявка успішно відправлена! <br>
+                        Наші менеджери якнайшвидше з Вами зв’яжуться.
+                    </p>
+                    <button class="order__btn btn_white" type="button">ОК</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="js/app.min.js?_v=20241226205125" defer></script>
 </body>
 
 </html>
