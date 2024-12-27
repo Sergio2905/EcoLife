@@ -121,6 +121,7 @@ h6 {
   --white: #fff;
   --black: #1E1E1E;
   --green: #007057;
+  --bg: url("../img/loading.gif") center / 24px no-repeat;
 }
 
 body {
@@ -686,6 +687,8 @@ body._lock {
   overflow: hidden;
   height: 290px;
   width: 100%;
+  background: var(--bg);
+  min-height: 50px;
 }
 
 .for__image img {
@@ -836,6 +839,7 @@ body._lock {
 .how__image {
   flex: 1 1 50%;
   position: relative;
+  background: var(--bg);
 }
 
 .how__image img {
@@ -872,6 +876,7 @@ body._lock {
 .order__image {
   flex: 1 1 60%;
   position: relative;
+  background: var(--bg);
 }
 
 .order__image img {
@@ -975,6 +980,8 @@ body._lock {
   justify-content: center;
   align-items: center;
   width: 100%;
+  background: var(--bg);
+  min-height: 50px;
 }
 
 .products__image img {
@@ -1069,6 +1076,8 @@ body._lock {
 
 .advantages__image {
   margin-bottom: 24px;
+  background: var(--bg);
+  min-height: 50px;
 }
 
 .advantages__image img {
