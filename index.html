@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="css/style.min.css?_v=20241226205125">
+    <link rel="stylesheet" href="css/style.min.css?_v=20241227101351">
     <link rel="icon" type="image/ico" href="img/favicon.ico">
     <meta property="og:image" content="img/main/image.png" />
     <title>EcoLife</title>
@@ -19,7 +19,7 @@
         <header class="header">
     <div class="header__container container">
         <div class="header__body">
-            <a href="/" class="header__logo">
+            <a href="/" class="header__logo" title="Logo">
                 <img src="img/logo.svg" alt="Logo">
             </a>
             <div class="header__menu menu">
@@ -36,17 +36,17 @@
                         </li>
                     </ul>
                     <div class="menu__socials">
-                        <a href="#" class="menu__social">
+                        <a href="#" class="menu__social" title="Email">
                             <svg>
                                 <use href="img/icons/icons.svg#mail"></use>
                             </svg>
                         </a>
-                        <a href="#" class="menu__social">
+                        <a href="#" class="menu__social" title="Viber">
                             <svg>
                                 <use href="img/icons/icons.svg#viber"></use>
                             </svg>
                         </a>
-                        <a href="#" class="menu__social">
+                        <a href="#" class="menu__social" title="Whatsapp">
                             <svg>
                                 <use href="img/icons/icons.svg#whatsapp"></use>
                             </svg>
@@ -99,20 +99,32 @@
                         <div class="for__slider">
                             <div class="for__wrapper swiper-wrapper">
                                 <div class="for__slide swiper-slide">
-                                    <div class="for__image">
-                                        <picture><source srcset="img/for/image1.webp" type="image/webp"><img src="img/for/image1.png" alt="Image"></picture>
+                                    <div class="for__image lazy">
+                                        <picture>
+                                            <source data-srcset="img/for/image1.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/for/image1.png" src="img/plug.png" alt="Image">
+                                        </picture>
                                     </div>
                                     <div class="for__name">Для дому</div>
                                 </div>
                                 <div class="for__slide swiper-slide">
-                                    <div class="for__image">
-                                        <picture><source srcset="img/for/image2.webp" type="image/webp"><img src="img/for/image2.png" alt="Image"></picture>
+                                    <div class="for__image lazy">
+                                        <picture>
+                                            <source data-srcset="img/for/image2.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/for/image2.png" src="img/plug.png" alt="Image">
+                                        </picture>
                                     </div>
                                     <div class="for__name">Для офісу</div>
                                 </div>
                                 <div class="for__slide swiper-slide">
-                                    <div class="for__image">
-                                        <picture><source srcset="img/for/image3.webp" type="image/webp"><img src="img/for/image3.png" alt="Image"></picture>
+                                    <div class="for__image lazy">
+                                        <picture>
+                                            <source data-srcset="img/for/image3.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/for/image3.png" src="img/plug.png" alt="Image">
+                                        </picture>
                                     </div>
                                     <div class="for__name">Для військових</div>
                                 </div>
@@ -249,8 +261,11 @@
 
                             </div>
                         </div>
-                        <div class="how__image">
-                            <picture><source srcset="img/how/image.webp" type="image/webp"><img src="img/how/image.png" alt="Image"></picture>
+                        <div class="how__image lazy">
+                            <picture>
+                                <source data-srcset="img/how/image.webp" srcset="img/plug.png" type="image/webp">
+                                <img data-src="img/how/image.png" src="img/plug.png" alt="Image">
+                            </picture>
                         </div>
                     </div>
                 </div>
@@ -259,8 +274,11 @@
             <section class="order">
                 <div class="order__container container">
                     <div class="order__body">
-                        <div class="order__image">
-                            <picture><source srcset="img/order/image.webp" type="image/webp"><img src="img/order/image.png" alt="Image"></picture>
+                        <div class="order__image lazy">
+                            <picture>
+                                <source data-srcset="img/order/image.webp" srcset="img/plug.png" type="image/webp">
+                                <img data-src="img/order/image.png" src="img/plug.png" alt="Image">
+                            </picture>
                         </div>
                         <form action="" class="order__form">
                             <h2 class="order__title">Залишити заявку</h2>
@@ -279,8 +297,12 @@
                     <div class="products__body">
                         <div class="products__item">
                             <h3 class="products__name">EcoLiFe PS-3000</h3>
-                            <div class="products__image">
-                                <picture><source srcset="img/products/image1.webp" type="image/webp"><img src="img/products/image1.jpg" alt="Image"></picture>
+                            <div class="products__image lazy">
+                                <picture>
+                                    <source data-srcset="img/products/image1.webp" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/products/image1.jpg" src="img/plug.png" alt="Image">
+                                </picture>
                             </div>
                             <a href="#" class="products__link">дивитись характеристики</a>
                             <div class="products__footer">
@@ -294,8 +316,12 @@
                         </div>
                         <div class="products__item">
                             <h3 class="products__name">EcoLiFe PS-3000 Pro</h3>
-                            <div class="products__image">
-                                <picture><source srcset="img/products/image2.webp" type="image/webp"><img src="img/products/image2.jpg" alt="Image"></picture>
+                            <div class="products__image lazy">
+                                <picture>
+                                    <source data-srcset="img/products/image2.webp" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/products/image2.jpg" src="img/plug.png" alt="Image">
+                                </picture>
                             </div>
                             <a href="#" class="products__link">дивитись характеристики</a>
                             <div class="products__footer">
@@ -309,8 +335,12 @@
                         </div>
                         <div class="products__item">
                             <h3 class="products__name">EcoLiFe PS-5000</h3>
-                            <div class="products__image">
-                                <picture><source srcset="img/products/image3.webp" type="image/webp"><img src="img/products/image3.jpg" alt="Image"></picture>
+                            <div class="products__image lazy">
+                                <picture>
+                                    <source data-srcset="img/products/image3.webp" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/products/image3.jpg" src="img/plug.png" alt="Image">
+                                </picture>
                             </div>
                             <a href="#" class="products__link">дивитись характеристики</a>
                             <div class="products__footer">
@@ -333,8 +363,12 @@
                     </div>
                     <div class="advantages__body">
                         <div class="advantages__item">
-                            <div class="advantages__image">
-                                <picture><source srcset="img/advantages/image1.webp" type="image/webp"><img src="img/advantages/image1.png" alt="Image"></picture>
+                            <div class="advantages__image lazy">
+                                <picture>
+                                    <source data-srcset="img/advantages/image1.webp" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/advantages/image1.png" src="img/plug.png" alt="Image">
+                                </picture>
                             </div>
                             <h3 class="advantages__name">Найкраща вартість</h3>
                             <p class="advantages__desc">
@@ -343,8 +377,12 @@
                             </p>
                         </div>
                         <div class="advantages__item">
-                            <div class="advantages__image">
-                                <picture><source srcset="img/advantages/image2.webp" type="image/webp"><img src="img/advantages/image2.png" alt="Image"></picture>
+                            <div class="advantages__image lazy">
+                                <picture>
+                                    <source data-srcset="img/advantages/image2.webp" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/advantages/image2.png" src="img/plug.png" alt="Image">
+                                </picture>
                             </div>
                             <h3 class="advantages__name">Доставка та самовивіз</h3>
                             <p class="advantages__desc">
@@ -353,8 +391,12 @@
                             </p>
                         </div>
                         <div class="advantages__item">
-                            <div class="advantages__image">
-                                <picture><source srcset="img/advantages/image3.webp" type="image/webp"><img src="img/advantages/image3.png" alt="Image"></picture>
+                            <div class="advantages__image lazy">
+                                <picture>
+                                    <source data-srcset="img/advantages/image3.webp" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/advantages/image3.png" src="img/plug.png" alt="Image">
+                                </picture>
                             </div>
                             <h3 class="advantages__name">
                                 Гарантія та повернення коштів
@@ -373,7 +415,7 @@
                     <h2 class="about__title">Характеристики пристрою</h2>
                     <div class="about__body">
                         <div class="about__text">
-                            <button type="button" class="about__more">
+                            <button type="button" class="about__more" title="Show more">
                                 <svg>
                                     <use href="img/icons/icons.svg#arrow"></use>
                                 </svg>
@@ -398,11 +440,8 @@
                                 <li>Універсальний захист з захисними функціями</li>
                             </ol>
                         </div>
-                        <div class="about__video">
-                            <iframe src="https://www.youtube.com/embed/E-9bycb_3nI?si=EtIHni_iuZF08ldx&amp;controls=0"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="about__video"
+                            data-video="https://www.youtube.com/embed/E-9bycb_3nI?si=EtIHni_iuZF08ldx&amp;controls=0">
                         </div>
                     </div>
                 </div>
@@ -430,21 +469,21 @@
     <div class="footer__container container">
         <div class="footer__body">
             <div class="footer__main" data-desk="footer-menu, after">
-                <a href="/" class="footer__logo" data-mob="footer-menu, after">
+                <a href="/" class="footer__logo" data-mob="footer-menu, after" title="Logo">
                     <img src="img/logo.svg" alt="Logo">
                 </a>
                 <div class="footer__socials">
-                    <a href="#" class="footer__social">
+                    <a href="#" class="footer__social" title="Email">
                         <svg>
                             <use href="img/icons/icons.svg#mail"></use>
                         </svg>
                     </a>
-                    <a href="#" class="footer__social">
+                    <a href="#" class="footer__social" title="Viber">
                         <svg>
                             <use href="img/icons/icons.svg#viber"></use>
                         </svg>
                     </a>
-                    <a href="#" class="footer__social">
+                    <a href="#" class="footer__social" title="Whatsapp">
                         <svg>
                             <use href="img/icons/icons.svg#whatsapp"></use>
                         </svg>
@@ -518,7 +557,7 @@
         </div>
     </div>
 </div>
-    <script src="js/app.min.js?_v=20241226205125" defer></script>
+    <script src="js/app.min.js?_v=20241227101351" defer></script>
 </body>
 
 </html>
