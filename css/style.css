@@ -1294,15 +1294,15 @@ body._lock {
   align-items: center;
 }
 
-.modal__close {
+.modal__btn {
   display: block;
   position: relative;
   width: 24px;
   height: 24px;
 }
 
-.modal__close::before,
-.modal__close::after {
+.modal__btn::before,
+.modal__btn::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -1312,11 +1312,11 @@ body._lock {
   background: var(--white);
 }
 
-.modal__close::before {
+.modal__btn::before {
   transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.modal__close::after {
+.modal__btn::after {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 

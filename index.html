@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="css/style.min.css?_v=20241227102221">
+    <link rel="stylesheet" href="css/style.min.css?_v=20241227105405">
     <link rel="icon" type="image/ico" href="img/favicon.ico">
     <meta property="og:image" content="img/main/image.png" />
     <title>EcoLife</title>
@@ -520,7 +520,7 @@
                 <a href="/" class="modal__logo">
                     <img src="img/logo-invert.svg" alt="Logo">
                 </a>
-                <button type="button" class="modal__close"></button>
+                <button type="button" class="modal__btn modal__close"></button>
             </div>
             <div class="modal__body">
                 <form action="" class="modal__order order__form">
@@ -542,7 +542,7 @@
                 <a href="/" class="modal__logo">
                     <img src="img/logo-invert.svg" alt="Logo">
                 </a>
-                <button type="button" class="modal__close"></button>
+                <button type="button" class="modal__btn modal__close"></button>
             </div>
             <div class="modal__body">
                 <div class="modal__order order__form">
@@ -551,13 +551,36 @@
                         Ваша заявка успішно відправлена! <br>
                         Наші менеджери якнайшвидше з Вами зв’яжуться.
                     </p>
-                    <button class="order__btn btn_white" type="button">ОК</button>
+                    <button class="order__btn btn_white modal__close" type="button">ОК</button>
                 </div>
             </div>
         </div>
     </div>
 </div>
-    <script src="js/app.min.js?_v=20241227102221" defer></script>
+
+<div class="modal" id="error">
+    <div class="modal__wrapper">
+        <div class="modal__content">
+            <div class="modal__header">
+                <a href="/" class="modal__logo">
+                    <img src="img/logo-invert.svg" alt="Logo">
+                </a>
+                <button type="button" class="modal__btn modal__close"></button>
+            </div>
+            <div class="modal__body">
+                <div class="modal__order order__form">
+                    <h2 class="order__title">Помилка!</h2>
+                    <p class="order__text">
+                        Не вдалось відправити заявку. <br>
+                        Спробуйте будь-ласка піздніше.
+                    </p>
+                    <button class="order__btn btn_white modal__close" type="button">ОК</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="js/app.min.js?_v=20241227105405" defer></script>
 </body>
 
 </html>
